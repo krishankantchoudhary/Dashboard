@@ -2,12 +2,10 @@
 import './App.css'
 import { NavLink, Route, Routes } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
-import Calender from './pages/Calender'
-import Weather from './pages/Weather'
-import News from './pages/News'
 import Togglemode from "../src/Components/Togglemode"
 import TaskManager from './pages/TaskManager'
 import { FaRegUser } from "react-icons/fa";
+import LoginPage from './pages/LoginPage'
 
 function App() {
  
@@ -17,9 +15,7 @@ function App() {
       <div className="navbar">
       <FaRegUser className='icon'/>
       <NavLink className ="a" to="/">Dashboard</NavLink>
-      <NavLink className ="a" to="/Weather">Weather</NavLink>
-      <NavLink className ="a" to="/Calender">Calender</NavLink>
-      <NavLink className ="a" to="/News">News</NavLink>
+      <NavLink className="a" to="/LoginPage">Login Page</NavLink>
       <NavLink className ="a" to="/TaskManager">TaskManager</NavLink>
       </div>
 
@@ -27,9 +23,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Dashboard></Dashboard>}></Route>
-        <Route path="/Weather" element={<Weather></Weather>}></Route>
-        <Route path="/Calender" element={<Calender></Calender>}></Route>
-        <Route path="/News" element={<News></News>}></Route>
+        <Route path="/LoginPage" element={<LoginPage></LoginPage>}></Route>
         <Route path="/TaskManager" element={<TaskManager></TaskManager>}></Route>
       </Routes>
 

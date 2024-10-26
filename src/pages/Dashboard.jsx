@@ -1,8 +1,7 @@
-import Calender from "./Calender";
-import Weather from "./Weather";
-import News from "./News";
+
 import TaskManager from "./TaskManager";
 import "./Dashboard.css"
+import LoginPage from "./LoginPage";
 
 const Dashboard=()=>{
     return(
@@ -11,17 +10,10 @@ const Dashboard=()=>{
                 <h1>Dashboard</h1>
             </div>
             <div>
-                <div className="sec1">
-                <Weather></Weather>
-                <Calender></Calender>
-                </div>
-                
                 <div className="sec2">
-                <News></News>
                 <TaskManager></TaskManager>
+                <LoginPage></LoginPage>
                 </div>
-                
-
             </div>
         </div>
     )
